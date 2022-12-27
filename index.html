@@ -11,13 +11,29 @@
     <div class="main">
         <div class="container">
             <h2>Generate Random <br><span>PASSWORDS</span></h2>
-            <div id="inp">Enter the length: 
-                <input type="number" id="inp-el">
+            <div class="inp">
+                <div id="len">Enter Length: 
+                    <input type="number" id="inp-el">
+                </div>
+                <div class="check">Include Lowercase
+                    <input type="checkbox" name="" id="lower-check">
+                </div>
+                <div class="check">Include Uppercase
+                    <input type="checkbox" name="" id="upper-check">
+                </div>
+                <div class="check">Include Numbers
+                    <input type="checkbox" name="" id="nums-check">
+                </div>
+                <div class="check">Include Symbols
+                    <input type="checkbox" name="" id="symbol-check">
+                </div>
             </div>
             <p id="box1" class="pass">password 1</p>
             <p id="box2" class="pass">password 2</p>
-            <button class="btn" onclick="generate()">GENERATE PASSWORDS</button>
-            <button class="btn" onclick="reset()">RESET PASSWORDS</button>
+            <div class="btn-box">
+                <button class="btn" onclick="generate()">GENERATE</button>
+                <button class="btn" onclick="reset()">RESET</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
